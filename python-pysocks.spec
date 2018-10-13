@@ -9,11 +9,11 @@ License:	BSD
 URL:		https://github.com/Anorov/PySocks
 Source0:	https://files.pythonhosted.org/packages/source/p/pysocks/PySocks-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python-devel
-BuildRequires:	python2-setuptools
+BuildRequires:	pkgconfig(python2)
+BuildRequires:	pythonegg(setuptools)
 
-BuildRequires:	python3-devel
-BuildRequires:	python3-setuptools
+BuildRequires:	pkgconfig(python)
+BuildRequires:	python3egg(setuptools)
 
 %description
 A Python SOCKS client module.
@@ -47,12 +47,12 @@ find %{py3dir} -name '*.py' | xargs sed -i '1s|^#!python|#!%{__python3}|'
 %py2_build
 
 pushd %{py3dir}
-%py3_build
+%py_build
 popd
 
 %install
 pushd %{py3dir}
-%py3_install
+%py_install
 popd
 
 %py2_install
