@@ -60,14 +60,14 @@ popd
 %files -n python2-pysocks
 %license LICENSE
 %doc README.md
-%{python_sitelib}/socks.py*
-%{python_sitelib}/sockshandler.py*
-%{python_sitelib}/%{oname}-%{version}-py%{python2_version}.egg-info
+%{python2_sitelib}/socks.py*
+%{python2_sitelib}/sockshandler.py*
+%{python2_sitelib}/%{oname}-%{version}-py%{python2_version}.egg-info
 
 %files -n python3-pysocks
 %license LICENSE
 %doc README.md
-%{python3_sitelib}/socks.py
-%{python3_sitelib}/__pycache__/*
-%{python3_sitelib}/sockshandler.py
-%{python3_sitelib}/%{oname}-%{version}-py%{python3_version}.egg-info
+%{python_sitelib}/socks.py
+%{python_sitelib}/__pycache__/*
+%{python_sitelib}/sockshandler.py
+%{python_sitelib}/%{oname}-%{version}-py%{python3_version}.egg-info
