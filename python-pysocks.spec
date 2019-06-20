@@ -2,7 +2,7 @@
 
 Name:		python-pysocks
 Summary:	A Python SOCKS client module
-Version:	1.6.8
+Version:	1.7.0
 Release:	1
 Group:		Development/Python
 License:	BSD
