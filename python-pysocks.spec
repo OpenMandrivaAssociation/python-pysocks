@@ -2,12 +2,12 @@
 
 Name:		python-pysocks
 Summary:	A Python SOCKS client module
-Version:	1.7.0
+Version:	1.7.1
 Release:	1
 Group:		Development/Python
 License:	BSD
 URL:		https://github.com/Anorov/PySocks
-Source0:	https://files.pythonhosted.org/packages/source/p/pysocks/PySocks-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-1.7.1.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python2)
 BuildRequires:	pythonegg(setuptools)
