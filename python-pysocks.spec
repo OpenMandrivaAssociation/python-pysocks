@@ -3,11 +3,11 @@
 Name:		python-pysocks
 Summary:	A Python SOCKS client module
 Version:	1.7.1
-Release:	3
+Release:	4
 Group:		Development/Python
 License:	BSD
 URL:		https://github.com/Anorov/PySocks
-Source0:	https://files.pythonhosted.org/packages/bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-1.7.1.tar.gz
+Source0:	https://files.pythonhosted.org/packages/bd/11/293dd436aea955d45fc4e8a35b6ae7270f5b8e00b53cf6c024c83b657a11/PySocks-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(python2)
 BuildRequires:	python2dist(setuptools)
@@ -68,6 +68,5 @@ popd
 %license LICENSE
 %doc README.md
 %{python_sitelib}/socks.py
-%{python_sitelib}/__pycache__/*
 %{python_sitelib}/sockshandler.py
 %{python_sitelib}/%{oname}-%{version}-py%{python3_version}.egg-info
