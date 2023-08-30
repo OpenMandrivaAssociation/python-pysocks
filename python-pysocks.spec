@@ -3,7 +3,7 @@
 Name:		python-pysocks
 Summary:	A Python SOCKS client module
 Version:	1.7.1
-Release:	6
+Release:	7
 Group:		Development/Python
 License:	BSD
 URL:		https://github.com/Anorov/PySocks
@@ -12,6 +12,7 @@ BuildArch:	noarch
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python3dist(setuptools)
 %rename python3-pysocks
+%rename python2-pysocks
 
 %description
 A Python SOCKS client module.
